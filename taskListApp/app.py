@@ -8,6 +8,7 @@ def home():
         tareas.append(request.form.get("tarea"))
     return render_template("index.html", tareas=tareas)
 
+
 @app.route("/agregar.html")
 def agregar():
     return render_template("agregar.html")
