@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block bodypage %}
+        <h1> Hola {{nombre}} {{apellido}}</h1>
+        <h2> Bienvenidos </h2>
+        {% for i in range(num|length) %}
+        <h3>El número es el {{ i }}</h3>
+        {% endfor %}
+        <h4>Largo de números: {{ num|length }}</h4>
+{% endblock %}

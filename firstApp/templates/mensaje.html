@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block bodypage %}
+<h1>Bienvenido</h1>
+    <form action="{{ url_for('getmensaje') }}" method="POST">
+        <input type="text" name="nombre" placeholder="Debe ingresar nombre">
+        <button>Enviar</button>
+    </form>
+{% endblock %}
